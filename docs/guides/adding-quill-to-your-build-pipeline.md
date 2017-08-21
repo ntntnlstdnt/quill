@@ -27,7 +27,7 @@ You Webpack configuration file will also need to alias Quill and Parchment to po
 Quill is distributed with builds `quill.js` and `quill.core.js`. The purpose of the entry files for both builds, [quill.js](https://github.com/quilljs/quill/blob/master/quill.js) and [core.js](https://github.com/quilljs/quill/blob/master/core.js), is to import and register necessary dependencies. You will likely want a similar entry point in your application that includes only the formats, modules, or themes that you use.
 
 ```js
-import Quill from 'quill/core';
+import Quill from 'quill/core/quill';
 
 import Toolbar from 'quill/modules/toolbar';
 import Snow from 'quill/themes/snow';
